@@ -11771,17 +11771,6 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     -webkit-filter: brightness(25%);
     filter: brightness(25%)
 }
-body::after,
-.callout-backdrop,
-.userPopout-4pfA0d::before,
-.root-2sNHUF::before,
-#pubs-container::before,
-.auth-background,
-.auth-tiling-bg,
-.invite-modal .invite-splash,
-.radio-theme.light label,
-.radio-theme.dark label {
-    background-image: url(https://images7.alphacoders.com/434/434993.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
 }
 [class*="typeWindows-"] {
     border-bottom: 2px solid rgba(0,0,0,.35);
@@ -11789,4 +11778,9 @@ body::after,
 DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-members {
     border: 1px solid rgba(0,0,0,.35) !important;
     border-top: transparent !important;
+}
+.message-group .embed, .theme-dark .message-group .embed {
+    border: 2px solid rgba(0,0,0,.35) !important;
+    border-left: transparent !important;
+    background-color: rgba(255,255,255,0.03) !important;
 }
