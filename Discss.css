@@ -3935,19 +3935,19 @@ ul.bda-slist {
 
 @-webkit-keyframes badge {
     from {
-        background-color: var(--main-color)
+        background-color: #f04747
     }
     to {
-        background-color: var(--hover-color)
+        background-color: #BF2F2F
     }
 }
 
 @keyframes badge {
     from {
-        background-color: var(--main-color)
+        background-color: #f04747
     }
     to {
-        background-color: var(--hover-color)
+        background-color: #BF2F2F
     }
 }
 
