@@ -11790,3 +11790,9 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="menu-"] {
     background: rgba(0,0,0,0.6) !important;
 }
+[class*="separator-"] {
+    background: rgba(0,0,0,0.35) !important;
+}
+[class*="item-"]:hover {
+    background: rgba(0,0,0,0.35) !important;
+}
