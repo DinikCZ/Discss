@@ -307,7 +307,7 @@
      }
 
      .innerEnabled-gLHeOL.inner-3if5cm.flex-3B1Tl4.innerNoAutocomplete-kaUXJZ, .innerEnabled-gLHeOL.inner-3if5cm.flex-3B1Tl4.innerAutocomplete-2qsvzH {
-       border: 1px solid var(--main-color);
+       border: 1px solid rgba(255,255,255,0.10);
      }
 
      .innerEnabledNoAttach-36PpAk.inner-3if5cm.flex-3B1Tl4.innerNoAutocomplete-kaUXJZ, .innerEnabledNoAttach-36PpAk.inner-3if5cm.flex-3B1Tl4.innerAutocomplete-2qsvzH {
@@ -3559,8 +3559,7 @@ form.auth-form {
     color: #B2B2B2
 }
 
-.theme-dark.contextMenu,
-.context-menu {
+.theme-dark [class*="contextMenu-"] {
     background: rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
     box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
@@ -3571,23 +3570,23 @@ form.auth-form {
     color: var(--main-color)!important
 }
 
-.contextMenu .item-subMenu,
-.theme-dark.contextMenu .item-subMenu {
+[class*="contextMenu-"] .item-subMenu,
+.theme-dark [class*="contextMenu-"] .item-subMenu {
     background: transparent url(https://discordapp.com/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%
 }
 
-.contextMenu .item-subMenu:hover,
-.theme-dark.contextMenu .item-subMenu:hover {
+[class*="contextMenu-"] .item-subMenu:hover,
+.theme-dark [class*="contextMenu-"] .item-subMenu:hover {
     background: rgba(0, 0, 0, 0.69) url(https://discordapp.com/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) no-repeat 155px 50%
 }
 
-.contextMenu .item-group,
-.theme-dark.contextMenu .item-group {
+[class*="contextMenu-"] .item-group,
+.theme-dark [class*="contextMenu-"] .item-group {
     border-top-color: hsla(0, 0%, 100%, 0.05)
 }
 
-.theme-dark.contextMenu .contextMenu,
-.contextMenu .contextMenu {
+.theme-dark [class*="contextMenu-"],
+[class*="contextMenu-"] [class*="contextMenu-"] {
     background: rgba(0, 0, 0, 0.6);
     border-color: transparent;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
@@ -5796,7 +5795,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: var(--main-color);
+    animation: badge 1s ease-in-out infinite alternate;
     border-radius: 3px;
     opacity: .8
 }
@@ -5809,7 +5808,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: var(--main-color);
+    animation: badge 1s ease-in-out infinite alternate;
     border-radius: 0 0 3px 3px;
     opacity: .8
 }
@@ -6469,30 +6468,30 @@ ul.bda-slist {
     color: var(--main-color)
 }
 
-.contextMenu .item,
-.theme-dark.contextMenu .item {
+[class*="contextMenu-"] .item,
+.theme-dark [class*="contextMenu-"] .item {
     color: hsla(0, 0%, 100%, .6);
     border-radius: 3px;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out
 }
 
-.contextMenu .item:hover,
-.theme-dark.contextMenu .item:hover {
+[class*="contextMenu-"] .item:hover,
+.theme-dark [class*="contextMenu-"] .item:hover {
     background-color: rgba(0, 0, 0, 0.69);
     background-image: none;
     color: #fff;
     cursor: pointer
 }
 
-.contextMenu .item.danger {
+[class*="contextMenu-"] .item.danger {
     background-color: #a93d3d;
     color: hsla(0, 0%, 100%, .6)!important;
     width: calc(100% - 4px);
     margin: 2px
 }
 
-.contextMenu .item.danger:hover {
+[class*="contextMenu-"] .item.danger:hover {
     background-color: #f04747;
     color: #fff!important
 }
@@ -11514,7 +11513,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     }
 }
 
-.contextMenu,
+[class*="contextMenu-"],
 .small-popout-box,
 .Select-menu-outer {
     -webkit-animation: menu-fold .3s cubic-bezier(.2, .6, .5, 1.1);
@@ -11528,7 +11527,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     border: 1px solid transparent
 }
 
-.contextMenu.invertY {
+[class*="contextMenu-"].invertY {
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%
 }
@@ -11559,7 +11558,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     }
 }
 
-.item-subMenu .contextMenu {
+.item-subMenu [class*="contextMenu-"] {
     -webkit-animation: menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
     animation: menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
     -webkit-transform-origin: 0 50%;
@@ -11791,8 +11790,11 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
     background: rgba(0,0,0,0.6) !important;
 }
 [class*="separator-"] {
-    background: rgba(0,0,0,0.35) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.35) !important;
 }
 [class*="item-"]:hover {
     background: rgba(0,0,0,0.35) !important;
+}
+[class*="botTagRegular-"] {
+    background: rgba(255,255,255,0.15) !important;
 }
