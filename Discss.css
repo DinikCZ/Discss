@@ -3559,7 +3559,8 @@ form.auth-form {
     color: #B2B2B2
 }
 
-[class*="contextMenu-"] {
+.theme-dark.contextMenu,
+.context-menu {
     background: rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
     box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
@@ -11787,5 +11788,5 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
     background-color: transparent !important;
 }
 [class*="menu-"] {
-    background: rgba(0,0,0,0.25) !important;
+    background: rgba(0,0,0,0.6) !important;
 }
