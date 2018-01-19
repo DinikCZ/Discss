@@ -3559,8 +3559,7 @@ form.auth-form {
     color: #B2B2B2
 }
 
-.theme-dark.context-menu,
-.context-menu {
+[class*="contextMenu-"] {
     background: rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
     box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
@@ -3571,23 +3570,23 @@ form.auth-form {
     color: var(--main-color)!important
 }
 
-.context-menu .item-subMenu,
-.theme-dark.context-menu .item-subMenu {
+.contextMenu .item-subMenu,
+.theme-dark.contextMenu .item-subMenu {
     background: transparent url(https://discordapp.com/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%
 }
 
-.context-menu .item-subMenu:hover,
-.theme-dark.context-menu .item-subMenu:hover {
+.contextMenu .item-subMenu:hover,
+.theme-dark.contextMenu .item-subMenu:hover {
     background: rgba(0, 0, 0, 0.69) url(https://discordapp.com/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) no-repeat 155px 50%
 }
 
-.context-menu .item-group,
-.theme-dark.context-menu .item-group {
+.contextMenu .item-group,
+.theme-dark.contextMenu .item-group {
     border-top-color: hsla(0, 0%, 100%, 0.05)
 }
 
-.theme-dark.context-menu .context-menu,
-.context-menu .context-menu {
+.theme-dark.contextMenu .contextMenu,
+.contextMenu .contextMenu {
     background: rgba(0, 0, 0, 0.6);
     border-color: transparent;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
@@ -6469,30 +6468,30 @@ ul.bda-slist {
     color: var(--main-color)
 }
 
-.context-menu .item,
-.theme-dark.context-menu .item {
+.contextMenu .item,
+.theme-dark.contextMenu .item {
     color: hsla(0, 0%, 100%, .6);
     border-radius: 3px;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out
 }
 
-.context-menu .item:hover,
-.theme-dark.context-menu .item:hover {
+.contextMenu .item:hover,
+.theme-dark.contextMenu .item:hover {
     background-color: rgba(0, 0, 0, 0.69);
     background-image: none;
     color: #fff;
     cursor: pointer
 }
 
-.context-menu .item.danger {
+.contextMenu .item.danger {
     background-color: #a93d3d;
     color: hsla(0, 0%, 100%, .6)!important;
     width: calc(100% - 4px);
     margin: 2px
 }
 
-.context-menu .item.danger:hover {
+.contextMenu .item.danger:hover {
     background-color: #f04747;
     color: #fff!important
 }
@@ -9776,7 +9775,7 @@ img:not(.emote):not(.emoji)::before {
 }
 
 .friends-table {
-    background: rgba(0, 0, 0, 0.6)!important;
+    background: transparent !important;
     margin-top: 0!important
 }
 
@@ -11514,7 +11513,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     }
 }
 
-.context-menu,
+.contextMenu,
 .small-popout-box,
 .Select-menu-outer {
     -webkit-animation: menu-fold .3s cubic-bezier(.2, .6, .5, 1.1);
@@ -11528,7 +11527,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     border: 1px solid transparent
 }
 
-.context-menu.invertY {
+.contextMenu.invertY {
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%
 }
@@ -11559,7 +11558,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     }
 }
 
-.item-subMenu .context-menu {
+.item-subMenu .contextMenu {
     -webkit-animation: menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
     animation: menu-slide .15s cubic-bezier(.2, .6, .5, 1.1);
     -webkit-transform-origin: 0 50%;
@@ -11786,4 +11785,7 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 }
 [class*="typing-"] {
     background-color: transparent !important;
+}
+[class*="menu-"] {
+    background: rgba(0,0,0,0.25) !important;
 }
