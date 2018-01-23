@@ -131,7 +131,7 @@
        color: white;
      }
 
-     .emoji-picker .scroller .emoji-item.selected {
+     [class*="emojiPicker-"] .scroller [class*="emojiItem-"][class*="selected-"] {
        background-position: center center !important;
        background-repeat: no-repeat !important;
        -webkit-background-size: contain !important;
@@ -3230,62 +3230,62 @@ img.image {
     background-size: 24px
 }
 
-.emoji-picker .dimmer {
+[class*="emojiPicker-"] .dimmer {
     background-color: transparent
 }
 
-.emoji-picker .header .search-bar {
+[class*="emojiPicker-"] .header .search-bar {
     background-color: transparent!important
 }
 
-.emoji-picker .search-bar .search-bar-inner,
-.emoji-picker .search-bar.search-bar-light .search-bar-inner {
+[class*="emojiPicker-"] .search-bar .search-bar-inner,
+[class*="emojiPicker-"] .search-bar.search-bar-light .search-bar-inner {
     background-color: rgba(0, 0, 0, 0.55);
     color: #fff;
     border: 1px solid transparent
 }
 
-.emoji-picker .sticky-header {
+[class*="emojiPicker-"] [class*="stickyHeader-"] {
     background-color: transparent
 }
 
-.emoji-picker .categories .item.selected {
+[class*="emojiPicker-"] .categories .item.selected {
     border-bottom-color: var(--main-color)
 }
 
-.emoji-picker .categories .item.people {
+[class*="emojiPicker-"] .categories .item.people {
     background-image: url(https://discordapp.com/assets/0509bf058793ef8ddd770a977e63614c.svg)
 }
 
-.emoji-picker .categories .item.nature {
+[class*="emojiPicker-"] .categories .item.nature {
     background-image: url(https://discordapp.com/assets/aafe899a4d7ad7717acc64f5b8f36342.svg)
 }
 
-.emoji-picker .categories .item.food {
+[class*="emojiPicker-"] .categories .item.food {
     background-image: url(https://discordapp.com/assets/0eb5a2b715ff649e9757a232996817ab.svg)
 }
 
-.emoji-picker .categories .item.activity {
+[class*="emojiPicker-"] .categories .item.activity {
     background-image: url(https://discordapp.com/assets/8674c1028a63d29fb605be53eeedf1bf.svg)
 }
 
-.emoji-picker .categories .item.travel {
+[class*="emojiPicker-"] .categories .item.travel {
     background-image: url(https://discordapp.com/assets/13e86ddf4302f697243425b2f954d00b.svg)
 }
 
-.emoji-picker .categories .item.objects {
+[class*="emojiPicker-"] .categories .item.objects {
     background-image: url(https://discordapp.com/assets/6d9a5b47dc3bf7adf54f19b1e3f6c5ad.svg)
 }
 
-.emoji-picker .categories .item.symbols {
+[class*="emojiPicker-"] .categories .item.symbols {
     background-image: url(https://discordapp.com/assets/83095e6af6c7cf33669e3ab169296867.svg)
 }
 
-.emoji-picker .categories .item.flags {
+[class*="emojiPicker-"] .categories .item.flags {
     background-image: url(https://discordapp.com/assets/ccda5cf0a64abbd18fdb9f914b55292e.svg)
 }
 
-.emoji-picker .categories .item.recent {
+[class*="emojiPicker-"] .categories .item.recent {
     background-image: url(https://discordapp.com/assets/0f1f2dff98b5e2099086e303d9be0dad.svg)
 }
 
@@ -3468,7 +3468,7 @@ form.auth-form {
     color: hsla(0, 0%, 100%, .2)
 }
 
-.emoji-picker {
+[class*="emojiPicker-"] {
     width: 346px;
     height: 327px;
     overflow: hidden;
@@ -3478,19 +3478,19 @@ form.auth-form {
     box-shadow: none
 }
 
-.emoji-picker .search-bar {
+[class*="emojiPicker-"] .search-bar {
     background-color: transparent
 }
 
 .diversity-selector .popout,
-.emoji-picker .diversity-selector .popout,
-.bda-dark .emoji-picker .diversity-selector .popout {
+[class*="emojiPicker-"] .diversity-selector .popout,
+.bda-dark [class*="emojiPicker-"] .diversity-selector .popout {
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.7)
 }
 
-.emoji-picker .dimmer.visible,
-.bda-dark .emoji-picker .dimmer.visible {
+[class*="emojiPicker-"] .dimmer.visible,
+.bda-dark [class*="emojiPicker-"] .dimmer.visible {
     pointer-events: auto;
     background-color: rgba(0, 0, 0, 0.5)
 }
@@ -3522,7 +3522,7 @@ form.auth-form {
     color: hsla(0, 0%, 100%, 0.5)
 }
 
-.emoji-picker .category {
+[class*="emojiPicker-"] [class*="category-"] {
     height: 21px;
     color: #BBB;
     background-color: rgba(0, 0, 0, .3)!important;
@@ -3536,7 +3536,7 @@ form.auth-form {
     letter-spacing: .08em
 }
 
-.emoji-picker .sticky-header .category {
+[class*="emojiPicker-"] [class*="stickyHeader-"] [class*="category-"] {
     display: none
 }
 
@@ -3545,17 +3545,17 @@ form.auth-form {
     border-radius: 3px
 }
 
-.emoji-picker .categories .item {
+[class*="emojiPicker-"] .categories .item {
     border-radius: 0
 }
 
-.emoji-picker .no-search-results .sad-discord {
+[class*="emojiPicker-"] .no-search-results .sad-discord {
     opacity: .6;
     -webkit-filter: invert(90%);
     filter: invert(90%)
 }
 
-.emoji-picker .no-search-results {
+[class*="emojiPicker-"] .no-search-results {
     color: #B2B2B2
 }
 
@@ -4293,7 +4293,7 @@ div#bd-pub-button:hover {
     margin-top: 1px
 }
 
-.emoji-picker .search-bar .search-bar-icon {
+[class*="emojiPicker-"] .search-bar .search-bar-icon {
     margin-top: 2px
 }
 
@@ -4309,10 +4309,10 @@ div#bd-pub-button:hover {
 
 .bda-dark #bda-qem-favourite-container,
 .bda-dark #bda-qem-twitch-container,
-.bda-dark .emoji-picker,
+.bda-dark [class*="emojiPicker-"],
 #bda-qem-favourite-container,
 #bda-qem-twitch-container,
-.emoji-picker {
+[class*="emojiPicker-"] {
     background: rgba(0, 0, 0, .5)!important
 }
 
@@ -4337,15 +4337,15 @@ div#bd-pub-button:hover {
     transition: all .3s ease-in-out
 }
 
-.bda-dark .emoji-picker .scroller .emoji-item,
-.emoji-picker .scroller .emoji-item {
+.bda-dark [class*="emojiPicker-"] [class*="scroller-"] [class*="emojiItem-"],
+[class*="emojiPicker-"] [class*="scroller-"] [class*="emojiItem-"] {
     border-radius: 5px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
 
-.bda-dark .emoji-picker .scroller .emoji-item.selected,
-.emoji-picker .scroller .emoji-item.selected {
+.bda-dark [class*="emojiPicker-"] [class*="scroller-"] [class*="emojiItem-"][class*="selected-"],
+[class*="emojiPicker-"] [class*="scroller-"] [class*="emojiItem-"][class*="selected-"] {
     background-color: var(--main-color)!important
 }
 
@@ -6580,31 +6580,31 @@ ul.bda-slist {
     color: #a7a7a7
 }
 
-.emoji-picker .premium-promo {
+[class*="emojiPicker-"] .premium-promo {
     background: rgba(0, 0, 0, .8)
 }
 
-.emoji-picker .premium-promo .premium-promo-image {
+[class*="emojiPicker-"] .premium-promo .premium-promo-image {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     opacity: .7
 }
 
-.emoji-picker .premium-promo .premium-promo-title {
+[class*="emojiPicker-"] .premium-promo .premium-promo-title {
     color: var(--main-color)
 }
 
-.emoji-picker .premium-promo .premium-promo-description {
+[class*="emojiPicker-"] .premium-promo .premium-promo-description {
     color: #999
 }
 
-.emoji-picker .premium-promo .btn {
+[class*="emojiPicker-"] .premium-promo .btn {
     background: var(--main-color);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
 
-.emoji-picker .premium-promo .btn:hover {
+[class*="emojiPicker-"] .premium-promo .btn:hover {
     background: var(--hover-color)
 }
 
@@ -7303,6 +7303,14 @@ pre:hover .copybutton {
 .message-group .embed-wrapper .embed-color-pill[style*="background-color"],
 .theme-dark .message-group .embed-wrapper .embed-color-pill[style*="background-color"] {
     opacity: .3
+}
+.embed {
+    -webkit-transition:200ms cubic-bezier(.2, .11, 0, 1);
+    transition:200ms cubic-bezier(.2, .11, 0, 1);
+}
+.embed:hover{
+    -webkit-transform:scale(1.03);
+    transform:scale(1.03);
 }
 
 .message-group .embed .embed-author-name,
@@ -9074,7 +9082,7 @@ pre:hover .copybutton {
 .bd-blue .checkbox .checkbox-inner input[type=checkbox]:checked + span,
 .bd-blue .detected-platform-accounts-modal .btn-group .btn-primary,
 .bd-blue .download-apps .platforms .platform.active .download-button,
-.bd-blue .emoji-picker .premium-promo .btn,
+.bd-blue [class*="emojiPicker-"] .premium-promo .btn,
 .bd-blue .channels-wrap [class*="scroller-"] .channel-text.unread:not(.selected):not(.channel-muted).selected::before,
 .bd-blue .channels-wrap [class*="scroller-"] .channel-voice-states li.speaking .avatar-small,
 .bd-blue .invite-banner,
@@ -9227,17 +9235,17 @@ img:not(.emote):not(.emoji)::before {
 }
 
 .search-bar-clear,
-.emoji-picker .search-bar-clear,
+[class*="emojiPicker-"] .search-bar-clear,
 .search-bar-light .search-bar-clear {
     background: transparent
 }
 
 .search-bar-clear::after,
 .search-bar-clear::before,
-.emoji-picker .search-bar-clear::before,
-.emoji-picker .search-bar-clear::after,
-.emoji-picker .search-bar-clear.active::after,
-.emoji-picker .search-bar-clear.active::before,
+[class*="emojiPicker-"] .search-bar-clear::before,
+[class*="emojiPicker-"] .search-bar-clear::after,
+[class*="emojiPicker-"] .search-bar-clear.active::after,
+[class*="emojiPicker-"] .search-bar-clear.active::before,
 .search-bar-light .search-bar-clear::after,
 .search-bar-light .search-bar-clear::before,
 .search-bar-light .search-bar-clear.active::after,
@@ -10852,38 +10860,38 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
     height: 14px
 }
 
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
-.emoji-picker .scroller::-webkit-scrollbar-thumb {
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb,
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb {
     background-color: var(--main-color)!important;
     border-radius: 10px!important;
     border-color: transparent!important
 }
 
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:active,
-.emoji-picker .scroller::-webkit-scrollbar-thumb:active {
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb:active,
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb:active {
     background-color: var(--hover-color)!important
 }
 
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar,
-.emoji-picker .scroller::-webkit-scrollbar {
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar,
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar {
     background: transparent!important;
     border: none!important
 }
 
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track,
-.emoji-picker .scroller::-webkit-scrollbar-track {
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-track,
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-track {
     background: transparent!important;
     border: none!important
 }
 
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
-.emoji-picker .scroller::-webkit-scrollbar-track-piece {
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-track-piece,
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-track-piece {
     background: transparent!important;
     border: none!important
 }
 
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-corner,
-.emoji-picker .scroller::-webkit-scrollbar-corner {
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-corner,
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-corner {
     background: transparent!important
 }
 
@@ -10906,11 +10914,11 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb,
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
 #pubs-container .scroller::-webkit-scrollbar-thumb,
-.emoji-picker .scroller::-webkit-scrollbar-thumb {
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb {
     background-color: var(--main-color)!important;
     border-color: transparent!important
 }
@@ -10918,11 +10926,11 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb:active,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb:active,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb:active,
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:active,
+.bda-dark [class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb:active,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb:active,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb:active,
 #pubs-container .scroller::-webkit-scrollbar-thumb:active,
-.emoji-picker .scroller::-webkit-scrollbar-thumb:active {
+[class*="emojiPicker-"] .scroller::-webkit-scrollbar-thumb:active {
     background-color: var(--hover-color)!important
 }
 
@@ -11798,9 +11806,19 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="botTagRegular-"] {
     background: rgba(255,255,255,0.15) !important;
 }
-[class*="emojiPicker-"] {
+/*[class*="emojiPicker-"] {
     background-color: rgba(0,0,0,0.35) !important;
 }
 [class*="emojiPicker-"] [class*="stickyHeader-"] {
     background: transparent !important;
 }
+[class*="emojiPicker-"] [class*="category-"] {
+    background-color: rgba(0,0,0,0.48) !important;
+    text-align: center;
+    color: var(--main-color) !important;
+    font-weight: 700 !important;
+}
+[class*="emojiItem-"][class*="selected-"] {
+    background-color: linear-gradient(to bottom,transparent 10%,var(--main-color) 100%); !important;
+    transition: all .3s ease-in-out;
+}/*
