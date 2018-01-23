@@ -11802,5 +11802,5 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
     background-color: rgba(0,0,0,0.35) !important;
 }
 [class*="emojiPicker-"] [class*="stickyHeader-"] {
-    background-color: transparent !important;
+    background: transparent !important;
 }
