@@ -11798,3 +11798,6 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="botTagRegular-"] {
     background: rgba(255,255,255,0.15) !important;
 }
+[class*="emojiPicker-"] {
+    background-color: rgba(0,0,0,0.35) !important;
+}
