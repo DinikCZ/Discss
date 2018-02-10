@@ -11825,4 +11825,7 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="emojiItem-"][class*="selected-"] {
     background-color: linear-gradient(to bottom,transparent 10%,var(--main-color) 100%); !important;
     transition: all .3s ease-in-out;
-}/*
+}*/
+.userPopout-4pfA0d::before {
+	background: rgba(0,0,0,0.3) !important;
+}

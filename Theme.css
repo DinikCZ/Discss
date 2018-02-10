@@ -1,7 +1,6 @@
 @import url("https://dinikcz.github.io/Discss/Discss.css");
 body::after,
 .callout-backdrop,
-.userPopout-4pfA0d::before,
 .root-2sNHUF::before,
 #pubs-container::before,
 .auth-background,
@@ -10,3 +9,8 @@ body::after,
 .radio-theme.light label,
 .radio-theme.dark label {
     background-image: url(https://images7.alphacoders.com/434/434993.jpg) !important; /* Sem vlož odkaz na pozadí */
+}
+/* Možnost změnit barvu tématu (Lze použít HTML Colors, RGB) PODPORA GRADIENTŮ */
+:root {
+	--main-color: #00B3FF;
+	--hover-color: #0078C4;
