@@ -11838,9 +11838,12 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="headerNormal-"] {
     background: rgba(0, 0, 0, 0.5) !important;
 }
-[class*="body-"] {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+.theme-dark [class*="body-"] {
+    background-color: rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255,255,255,0.05) !important
+}
+[class*="bodyNormal-"] {
+    background-color: transparent !important;
 }
 [class*="footer-"] {
     background-color: rgba(0, 0, 0, 0.5) !important;
