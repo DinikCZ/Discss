@@ -11832,6 +11832,9 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="playing-"] {
     background: rgba(0, 0, 0, 0.5) !important;
 }
+[class*="Headerplaying-"] {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
 [class*="headerNormal-"] {
     background: rgba(0, 0, 0, 0.5) !important;
 }
