@@ -10162,7 +10162,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 .overlay-updating-note,
 .user-settings-games .last-played,
 .user-settings-games .overlay-status-text {
-    color: #999!important
+    color: #fff!important
 }
 
 .user-settings-keybinds .ghost-pill {
@@ -11828,4 +11828,50 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 }*/
 .userPopout-4pfA0d::before {
 	background: rgba(0,0,0,0.3) !important;
+}
+[class*="playing-"] {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+[class*="headerNormal-"] {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+[class*="body-"] {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-top: 1px solid rgba(255,255,255,0.05) !important
+}
+[class*="footer-"] {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-top: 1px solid rgba(255,255,255,0.05) !important
+}
+[class*="activity-"] {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-top: 1px solid rgba(255,255,255,0.05) !important
+}
+[class*="headerSpotify-"] {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+[class*="topSectionSpotify-"] {
+    background: rgba(0, 0, 0, 0.65) !important;
+}
+[class*="lookInverted-"] {
+    background-color: transparent !important;
+    border: 1px solid hsla(0,0%,100%,.3) !important;
+    color: #fff !important;
+    transition: border .17s ease,color .17s ease;
+}
+[class*="lookInverted-"]:hover {
+    border: 1px solid hsla(0,0%,100%,.6) !important;
+    color: #fff !important;
+    transition: border .17s ease,color .17s ease;
+}
+[class*="actionButton-"] {
+    background-color: transparent !important;
+    border: 1px solid hsla(0,0%,100%,.3) !important;
+    color: #fff !important;
+    transition: border .17s ease,color .17s ease;
+}
+[class*="actionButton-"]:hover {
+    border: 1px solid hsla(0,0%,100%,.6) !important;
+    color: #fff !important;
+    transition: border .17s ease,color .17s ease;
 }
