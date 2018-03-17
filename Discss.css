@@ -11830,23 +11830,23 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 	background: rgba(0,0,0,0.3) !important;
 }
 [class*="playing-"] {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
 [class*="headerPlaying-"] {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
 [class*="headerNormal-"] {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
 .theme-dark [class*="body-"] {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid rgba(255,255,255,0.05) !important
 }
 [class*="bodyNormal-"] {
     background-color: transparent !important;
 }
 [class*="footer-"] {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border-top: 1px solid rgba(255,255,255,0.05) !important
 }
 [class*="activity-"] {
@@ -11854,7 +11854,7 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
     border-top: 1px solid rgba(255,255,255,0.05) !important
 }
 [class*="headerSpotify-"] {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
 [class*="topSectionSpotify-"] {
     background: rgba(0, 0, 0, 0.65) !important;
