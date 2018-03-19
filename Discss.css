@@ -11830,31 +11830,28 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 	background: rgba(0,0,0,0.3) !important;
 }
 [class*="playing-"] {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: transparent !important;
 }
 [class*="headerPlaying-"] {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: transparent !important;
 }
 [class*="headerNormal-"] {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: transparent !important;
 }
-.theme-dark [class*="body-"] {
+[class*="userPopout-"] {
     background-color: rgba(0, 0, 0, 0.7);
-    border-top: 1px solid rgba(255,255,255,0.05) !important
 }
 [class*="bodyNormal-"] {
     background-color: transparent !important;
 }
 [class*="footer-"] {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-    border-top: 1px solid rgba(255,255,255,0.05) !important
+    background-color: transparent !important;
 }
 [class*="activity-"] {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    border-top: 1px solid rgba(255,255,255,0.05) !important
+    background-color: transparent !important;
 }
 [class*="headerSpotify-"] {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: transparent !important;
 }
 [class*="topSectionSpotify-"] {
     background: rgba(0, 0, 0, 0.65) !important;
