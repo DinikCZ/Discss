@@ -11844,6 +11844,9 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 [class*="bodyNormal-"] {
     background-color: transparent !important;
 }
+[class*="body-"] {
+    background-color: transparent !important;
+}
 [class*="footer-"] {
     background-color: transparent !important;
 }
