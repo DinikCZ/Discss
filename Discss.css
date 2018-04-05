@@ -1,3 +1,5 @@
+@import url("https://intrnl.github.io/discordcustomizations/emojiApple/dist/themefile.css");
+
 /*---------------------------User popout fixes---------------------------*/
 
      .userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7d {
@@ -544,7 +546,7 @@
 
      /* Disappear */
 
-     DIV.guilds-wrapper .scroller-wrap, DIV.content .flex-spacer.flex-vertical, .theme-light DIV[class*="scroller"].channel-members {
+     DIV.guilds-wrapper .scroller-wrap, DIV.content .flex-spacer.flex-vertical, .theme-light DIV[class*="scroller"][class*="member"] {
        background-color: transparent !Important;
      }
 
@@ -556,7 +558,7 @@
        /* Thanks Krekevyks */
      }
 
-     DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-members {
+     DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member"] {
      }
 
      DIV.flex-spacer.flex-horizontal, #friends DIV.friends-table {
@@ -1430,11 +1432,11 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
     color: var(--main-color)
 }
 
-.channel-members .invite-btn {
+[class*="member"] .invite-btn {
     background-color: var(--main-color)
 }
 
-.channel-members .invite-btn:hover {
+[class*="member"] .invite-btn:hover {
     background-color: var(--hover-color)
 }
 
@@ -2227,11 +2229,11 @@ textarea {
     background: rgba(0, 0, 0, 0.35)!important
 }
 
-.channel-members .member:hover {
+[class*="member"] .member:hover {
     background: hsla(0, 0%, 100%, 0.07)!important
 }
 
-.channel-members .member .member-username {
+[class*="member"] .member .member-username {
     font-size: 14px
 }
 
@@ -2312,18 +2314,18 @@ textarea {
     margin-left: 10px
 }
 
-.bd-minimal .channel-members h2 {
+.bd-minimal [class*="member"] h2 {
     margin-top: 20px;
     margin-bottom: 3px;
     padding-left: 20px
 }
 
-.bd-minimal .channel-members h2:first-of-type {
+.bd-minimal [class*="member"] h2:first-of-type {
     margin-top: 0;
     margin-bottom: 3px
 }
 
-.bd-minimal .channel-members .member {
+.bd-minimal [class*="member"] .member {
     padding: 5px 15px 8px 20px
 }
 
@@ -2600,20 +2602,26 @@ a:link {
     border-top: 1px solid hsla(0, 0%, 100%, 0.04)
 }
 
-.channel-members h2 {
+[class*="membersGroup-"] {
     color: var(--main-color)!important;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    font-weight: 700;
-    padding: 4px 8px;
-    background-color: rgba(0, 0, 0, 0.48);
-    border: 1px solid;
-    border-color: transparent;
-    border-radius: 3px;
-    width: 190px;
-    margin-left: 15px;
-    text-align: center
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    letter-spacing: .08em !important;
+    font-weight: 700 !important;
+    background-color: rgba(0, 0, 0, 0.48) !important;
+    border: 1px solid !important;
+    width: 190px !important;
+    margin-left: 15px !important;
+    text-align: center !important;
+    padding: 4px 8px !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 5px !important;
+    transition: all 400ms ease;
+    line-height: normal !important;
+    height: auto !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+    margin-bottom: 5px;
 }
 
 .private-channels .search-result.selected::before,
@@ -2625,7 +2633,7 @@ a:link {
     border-color: var(--main-color)
 }
 
-.channel-members .member .member-game strong {
+[class*="member"] .member .member-game strong {
     color: var(--main-color)
 }
 
@@ -2903,8 +2911,8 @@ a:link {
     border-color: #282b30
 }
 
-.channel-members .member.popout-open,
-.channel-members .member:hover {
+[class*="member"] .member.popout-open,
+[class*="member"] .member:hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent)!important
 }
 
@@ -3029,7 +3037,7 @@ div.control-group .shortcut-recorder input[type=text] {
     padding: 3px
 }
 
-.channel-members .member.member-status-offline .avatar-small {
+[class*="member"] [class*="memberOffline"] [class*="avatarWrapper"] {
     -webkit-filter: grayscale(100%) blur(1px);
     filter: grayscale(100%) blur(1px);
     position: relative;
@@ -3041,8 +3049,8 @@ div.control-group .shortcut-recorder input[type=text] {
     transform: translateZ(0px)
 }
 
-.channel-members .member.popout-open .avatar-small,
-.channel-members .member:hover .avatar-small {
+[class*="member"] [class*="memberOffline"].popout-open [class*="avatarWrapper"],
+[class*="member"] [class*="memberOffline"]:hover [class*="avatarWrapper"] {
     -webkit-filter: none!important;
     filter: none!important;
     filter: none;
@@ -3702,7 +3710,7 @@ button.win-minimize:hover {
     margin-top: 0
 }
 
-.channel-members .member .member-activity strong {
+[class*="member"] .member .member-activity strong {
     font-weight: 900;
     color: var(--main-color)
 }
@@ -4464,7 +4472,7 @@ div#bd-pub-button:hover {
     text-shadow: 0 0 1px rgba(0, 0, 0, .3)
 }
 
-.channel-members .member {
+[class*="member"] .member {
     -webkit-transition: -webkit-transform .1s ease-in-out;
     transition: -webkit-transform .1s ease-in-out;
     transition: transform .1s ease-in-out;
@@ -4474,7 +4482,7 @@ div#bd-pub-button:hover {
     transform: translateZ(0)
 }
 
-.channel-members .member:active {
+[class*="member"] .member:active {
     -webkit-transform: scale(.9);
     transform: scale(.9)
 }
@@ -6231,7 +6239,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
     opacity: .7
 }
 
-.channel-members-loading {
+[class*="member"]-loading {
     display: none
 }
 
@@ -8202,7 +8210,7 @@ pre:hover .copybutton {
 }
 
 .private-channels .channel.selected a {
-    background-color: var(--main-color)
+    background-color: rgba(0,0,0,0.15) !important;
 }
 
 .private-channels .channel.selected .channel-activity strong {
@@ -8374,7 +8382,7 @@ pre:hover .copybutton {
 }
 
 .container-iksrDt .avatar-small::after {
-    content: "Status";
+    content: "Stav";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -8672,7 +8680,7 @@ pre:hover .copybutton {
     transition: all .3s ease-in-out
 }
 
-.channel-members .avatar-small .status,
+[class*="member"] .avatar-small .status,
 .private-channels .status,
 .channel-textarea-autocomplete-inner .avatar-small .status {
     border: none;
@@ -9076,7 +9084,7 @@ pre:hover .copybutton {
 .bd-blue .button,
 .bd-blue .change-log .changelog-button .cta,
 .bd-blue .change-log .changelog-fixed,
-.bd-blue .channel-members .invite-btn,
+.bd-blue [class*="member"] .invite-btn,
 .bd-blue .channel-textarea-guard button,
 .bd-blue .chat .new-messages-bar:hover,
 .bd-blue .checkbox .checkbox-inner input[type=checkbox]:checked + span,
@@ -9773,9 +9781,9 @@ img:not(.emote):not(.emoji)::before {
     border-bottom: 1px solid transparent!important
 }
 
-.channel-members,
+[class*="member"],
 .search-results-wrap {
-    background: transparent !important;
+    background: transparent;
 }
 
 .friends-header {
@@ -11783,7 +11791,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 [class*="typeWindows-"] {
     border-bottom: 2px solid rgba(0,0,0,.35);
 }
-DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-members {
+DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member"] {
     border: 1px solid rgba(0,0,0,.35) !important;
     border-top: transparent !important;
 }
@@ -11889,4 +11897,10 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"].channel-member
 }
 [class*="quickMessage-"] {
     background-color: transparent !important;
+}
+[class*="status-"] {
+    border-color: rgba(0,0,0,0.25);
+}
+.theme-dark [class*="members-"] {
+    background: transparent !important;
 }
