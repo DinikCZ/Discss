@@ -1,6 +1,8 @@
 //META{"name":"Dark and Blue","description":"Kompletně nový vzhled Discordu!","author":"Yusari","version":"2.0.1"}*//
 
 @import url("https://dinikcz.github.io/Discss/Discss.css");
+
+@import url("https://intrnl.github.io/discordcustomizations/emojiApple/dist/themefile.css"); /* iOS Emoji */
 body::after,
 .callout-backdrop,
 .root-2sNHUF::before,
