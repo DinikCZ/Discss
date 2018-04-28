@@ -11917,3 +11917,6 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
 [class*="contentHoveredText-"] {
     background-color: rgba(25,25,25,0.80) !important;
 }
+.theme-dark [class*="layer-"] {
+    background-color: transparent !important;
+}
