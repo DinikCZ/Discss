@@ -3708,7 +3708,7 @@ button.win-minimize:hover {
     margin-top: 0
 }
 
-[class*="member"] .member .member-activity strong {
+[class*="activityText"] strong {
     font-weight: 900;
     color: var(--main-color)
 }
@@ -11896,9 +11896,24 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
 [class*="quickMessage-"] {
     background-color: transparent !important;
 }
+[class*="theme-dark"] [class*="layers-"] {
+    background-color: transparent !important;
+}
 [class*="status-"] {
     border-color: rgba(0,0,0,0.25);
 }
 .theme-dark [class*="members-"] {
     background: transparent !important;
+}
+[class*="channels-"] {
+    background-color: transparent !important;
+}
+[class*="container-"] {
+    background-color: transparent !important;
+}
+[class*="contentSelectedText-"] {
+    background-color: rgba(25,25,25,0.80) !important;
+}
+[class*="contentHoveredText-"] {
+    background-color: rgba(25,25,25,0.80) !important;
 }
