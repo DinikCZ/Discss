@@ -11912,9 +11912,11 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
     background-color: transparent !important;
 }
 [class*="contentSelectedText-"] {
+	background-color: transparent !important;
     color: var(--main-color) !important;
     transition: all .1s ease-in-out}
 [class*="wrapperSelectedText-"] {
+	¨background-color: transparent !important;
     border-left: 3px solid var(--main-color) !important;
     transition: all .1s ease-in-out;
 }
