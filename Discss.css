@@ -11912,11 +11912,42 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
     background-color: transparent !important;
 }
 [class*="contentSelectedText-"] {
-    background-color: rgba(25,25,25,0.80) !important;
+    color: var(--main-color) !important;
+    transition: all .1s ease-in-out}
+[class*="wrapperSelectedText-"] {
+    border-left: 3px solid var(--main-color) !important;
+    transition: all .1s ease-in-out;
 }
 [class*="contentHoveredText-"] {
-    background-color: rgba(25,25,25,0.80) !important;
+    background-color: transparent !important;
+    color: var(--main-color) !important;
+}
+.content-20Aix8 {
+    border-radius: 0px !important;
+}
+.content-20Aix8:hover {
+    background-color: transparent !important;
+    color: var(--main-color) !important;
 }
 .theme-dark [class*="layer-"] {
     background-color: transparent !important;
+}
+.unread-1Dp-OI {
+    background-color: var(--main-color) !important;
+}
+.theme-dark .inner-zqa7da {
+    background-color: rgba(0,0,0,0.75) !important;
+    border: 2px solid rgba(255,255,255,0.10) !important;
+}
+.topSectionPlaying-1J5E4n {
+    background-color:transparent !important;
+}
+.inner-1JeGVc {
+    border: 2px solid rgba(255,255,255,0.10);
+}
+.connectedAccounts-repVzS {
+    padding-bottom:1px !important;
+}
+.userInfoSection-2acyCx {
+    padding-bottom: 10px;
 }
