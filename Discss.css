@@ -4280,6 +4280,9 @@ div#bd-pub-button:hover {
     -webkit-transition: border-color .1s ease-in-out;
     transition: border-color .1s ease-in-out
 }
+.theme-dark .search-results-wrap {
+	background-color: rgba(0,0,0,0.35) !important
+}
 
 .search-bar input:focus {
     border-color: var(--main-color)!important
@@ -6677,12 +6680,12 @@ ul.bda-slist {
     text-indent: -4px
 }
 
-.search-popout,
+[class*="searchPopout-"],
 .react-datepicker {
     background-color: rgba(0, 0, 0, .7)
 }
 
-.search-popout .results-group .search-learn-more {
+[class*="searchPopout-"] .results-group .search-learn-more {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/help.svg)!important;
     background-repeat: no-repeat;
     background-position: center;
@@ -6690,21 +6693,21 @@ ul.bda-slist {
     opacity: .7
 }
 
-.search-popout .option.selected {
+[class*="searchPopout-"] .option.selected {
     background-color: var(--main-color)
 }
 
-.search-popout .search-query {
+[class*="searchPopout-"] [class*="searchQuery"] {
     border-color: transparent
 }
 
-.search-popout .search-query.selected .keybind-shortcut span {
+[class*="searchPopout-"] [class*="searchQuery"].selected .keybind-shortcut span {
     border-color: hsla(0, 0%, 100%, .7);
     -webkit-box-shadow: inset 0 -4px 0 rgba(227, 227, 227, .7);
     box-shadow: inset 0 -4px 0 rgba(227, 227, 227, .7)
 }
 
-.search-popout .results-group .search-clear-history {
+[class*="searchPopout-"] .results-group .search-clear-history {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/close.svg)!important;
     background-repeat: no-repeat;
     background-position: center;
@@ -6712,22 +6715,22 @@ ul.bda-slist {
     opacity: .3
 }
 
-.search-popout .results-group .search-clear-history:hover {
+[class*="searchPopout-"] .results-group .search-clear-history:hover {
     opacity: .7
 }
 
-.search-popout .search-option .answer {
+[class*="searchPopout-"] .search-option .answer {
     color: #caccce
 }
 
-.search-popout .search-query .search-for strong,
-.search-popout .search-option .filter,
-.search-popout .search-option .non-text,
+[class*="searchPopout-"] [class*="searchQuery"] .search-for strong,
+[class*="searchPopout-"] .search-option .filter,
+[class*="searchPopout-"] .search-option .non-text,
 .react-datepicker .react-datepicker__current-month {
     color: #555
 }
 
-.search-popout .date-picker {
+[class*="searchPopout-"] .date-picker {
     border-color: transparent
 }
 
@@ -6771,13 +6774,13 @@ ul.bda-slist {
 .react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover,
 .react-datepicker .react-datepicker__day:hover,
 .react-datepicker .react-datepicker__day.react-datepicker__day--today::after,
-.search-popout .date-picker .date-picker-hint .hint-value {
+[class*="searchPopout-"] .date-picker .date-picker-hint .hint-value {
     background-color: var(--main-color);
     -webkit-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out
 }
 
-.search-popout .date-picker .date-picker-hint .hint-value:hover {
+[class*="searchPopout-"] .date-picker .date-picker-hint .hint-value:hover {
     background-color: var(--hover-color)
 }
 
@@ -6798,7 +6801,7 @@ ul.bda-slist {
     border-left-color: hsla(0, 0%, 100%, .04)!important
 }
 
-.search-popout .date-picker .date-picker-hint {
+[class*="searchPopout-"] .date-picker .date-picker-hint {
     border-color: transparent
 }
 
@@ -6871,8 +6874,8 @@ ul.bda-slist {
     box-shadow: none!important
 }
 
-.search-popout .results-group::before,
-.search-popout .option::after,
+[class*="searchPopout-"] .results-group::before,
+[class*="searchPopout-"] .option::after,
 .search-results-wrap .search-result::before,
 .search-results-wrap .search-result::after {
     display: none
@@ -7723,12 +7726,6 @@ pre:hover .copybutton {
 .bda-slist > li > div:not(.bda-right):not([style]) button {
     background: var(--main-color);
     color: #fff;
-    height: 20px;
-    padding: 0 6px 6px;
-    border-radius: 3px;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 20px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
@@ -7739,17 +7736,6 @@ pre:hover .copybutton {
 
 .bda-slist > li > div:not(.bda-right):not([style]) button + button {
     margin-left: 5px
-}
-
-.bda-slist > li > div:not(.bda-right):not([style]) input {
-    background: rgba(0, 0, 0, .3);
-    border-color: transparent;
-    border-bottom-color: hsla(0, 0%, 100%, .04);
-    color: #fff;
-    border-radius: 3px;
-    padding: 5px 0 5px 5px;
-    -webkit-transition: border-color .3s ease-in-out;
-    transition: border-color .3s ease-in-out
 }
 
 .bda-slist > li > div:not(.bda-right):not([style]) input:focus {
@@ -9110,7 +9096,7 @@ pre:hover .copybutton {
 .bd-blue .react-datepicker .react-datepicker__day:hover,
 .bd-blue .region-select-flag,
 .bd-blue .region-select:hover button,
-.bd-blue .search-popout .date-picker .date-picker-hint .hint-value,
+.bd-blue [class*="searchPopout-"] .date-picker .date-picker-hint .hint-value,
 .bd-blue .spinner-chasing-dots .ui-spinner-item,
 .bd-blue .spinner-wandering-cubes .ui-spinner-item,
 .bd-blue .tooltip,
@@ -10396,10 +10382,7 @@ img[src="/assets/616e078b351d0df460971441949c53a3.svg"] {
 }
 
 #bd-settingspane-container .ui-switch-item {
-    padding: 10px 20px;
-    margin-bottom: 5px;
     background: rgba(0, 0, 0, .3);
-    border-radius: 5px
 }
 
 #bd-settingspane-container .ui-switch-item .ui-flex {
@@ -11988,4 +11971,17 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
 }
 .typing-1KJk_j.dnd-1_xrcq, .typing-1KJk_j.idle-3DEnRT, .typing-1KJk_j.invisible-1kp8Z0, .typing-1KJk_j.offline-3qoTek, .typing-1KJk_j.streaming-2_dnHe, .typing-1KJk_j.unknown-Ms2zdV {
 	background-color: rgba(30,30,30,0.85) !important;
+}
+.theme-dark [class*="attachPopout-"] {
+	background-color: rgba(0,0,0,.5) !important;
+}
+.theme-dark [class*="popouts-"] {
+	background-color: rgba(0,0,0,.5) !important;
+}
+.theme-dark [class*="attachPopoutRow-"]:hover {
+	background-color: rgba(255,255,255,.10) !important;
+}
+.theme-dark .popouts-3dRSmE {
+	background-color: rgba(0,0,0,.75) !important;
+	background: rgba(0,0,0,.75) !important;
 }
