@@ -12007,3 +12007,6 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
 	left: -29px;
 	top: 29px;
 }
+.message-group .avatar-large {
+	margin-right: 25px !important;
+}
