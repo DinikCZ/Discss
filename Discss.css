@@ -1962,7 +1962,7 @@ textarea {
 
 .links,
 .chat,
-.typing,
+[class*="typing"],
 .content,
 .channels-wrap [class*="scroller-"],
 .private-channels,
@@ -2177,7 +2177,7 @@ textarea {
     margin-top: -1px
 }
 
-.typing {
+[class*="typing"]{
     font-size: 11px
 }
 
@@ -3870,12 +3870,12 @@ ul.bda-slist {
     font-weight: 600
 }
 
-.typing strong {
+[class*="typing"] strong {
     font-weight: 700;
     color: #A5A5A5
 }
 
-.typing {
+[class*="typing"] {
     font-size: 11px;
     color: #A5A5A5
 }
@@ -11763,9 +11763,6 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
     border-left: transparent !important;
     background-color: rgba(255,255,255,0.03) !important;
 }
-[class*="typing-"] {
-    background-color: transparent !important;
-}
 [class*="menu-"] {
     background: rgba(0,0,0,0.6) !important;
 }
@@ -11950,9 +11947,6 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
 }
 .guilds-wrapper .guilds .home-icon {
 	transition: all .2s ease-in-out;
-}
-.typing-1KJk_j.dnd-1_xrcq, .typing-1KJk_j.idle-3DEnRT, .typing-1KJk_j.invisible-1kp8Z0, .typing-1KJk_j.offline-3qoTek, .typing-1KJk_j.streaming-2_dnHe, .typing-1KJk_j.unknown-Ms2zdV {
-	background-color: rgba(30,30,30,0.85) !important;
 }
 .theme-dark [class*="attachPopout-"] {
 	background-color: rgba(0,0,0,.5) !important;
