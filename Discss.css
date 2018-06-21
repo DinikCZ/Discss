@@ -11869,7 +11869,7 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
     background: rgba(0, 0, 0, 0.65) !important;
 }
 [class*="body-"] [class*="scrollerWrap-"] [class*="scroller-"]  {
-    background: rgba(0, 0, 0, 0.65) !important;
+    background: rgba(0, 0, 0, 0.65);
 }
 [class*="lookInverted-"] {
     background-color: transparent !important;
@@ -11961,4 +11961,31 @@ DIV[class*="channels"][class*="vertical"], DIV[class*="scroller"][class*="member
 }
 .iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H {
 	color: var(--main-color) !important;
+}
+.theme-dark .activityFeed-28jde9 {
+	background-color: transparent !important;
+}
+.horizontalPaginationItemContainer-26FwrR {
+	background: transparent !important;
+}
+.dotSelected-Prpk_a {
+	background-color: var(--main-color) !important;
+	opacity: 1.0 !important;
+}
+.arrow-1-DaGi:hover {
+	color: var(--main-color) !important;
+	transition: all .2s ease-in-out;
+}
+.arrow-1-DaGi {
+	transition: all .2s ease-in-out;
+}
+.guilds-wrapper .guilds .home-icon:hover {
+    background-color: var(--main-color) !important;
+	transition: all .2s ease-in-out;
+}
+.guilds-wrapper .guilds .home-icon {
+	transition: all .2s ease-in-out;
+}
+.typing-1KJk_j.dnd-1_xrcq, .typing-1KJk_j.idle-3DEnRT, .typing-1KJk_j.invisible-1kp8Z0, .typing-1KJk_j.offline-3qoTek, .typing-1KJk_j.streaming-2_dnHe, .typing-1KJk_j.unknown-Ms2zdV {
+	background-color: rgba(30,30,30,0.85) !important;
 }
